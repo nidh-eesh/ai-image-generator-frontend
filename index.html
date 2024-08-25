@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+</head>
+
+<body>
+  <main>
+    <h1>AI Photo Generator</h1>
+
+
+    <div id="result">
+      Image will appear here
+    </div>
+
+    <form>
+      <label for="prompt">Prompt</label>
+      <textarea name="prompt" maxlength="160"></textarea>
+      <div class="model">
+        <label for="model">Model</label>
+        <select name="model">
+          <option value="flux/dev">Flux Dev</option>
+          <option value="flux/schnell">Flux Schnell</option>
+          <option value="flux-pro">Flux Pro</option>
+          <option value="flux-realism">Flux Realism</option>
+          <option value="stable-diffusion-v3-medium">Stable Diffusion V3 Medium</option>
+          <option value="SG161222/Realistic_Vision_V3.0_VAE">SG161222 Realistic Vision V3.0 VAE</option>
+          <option value="stabilityai/stable-diffusion-2-1">Stability AI Stable Diffusion 2.1</option>
+          <option value="stabilityai/stable-diffusion-xl-base-1.0">Stability AI Stable Diffusion XL Base 1.0</option>
+          <option value="wavymulder/Analog-Diffusion">Wavymulder Analog Diffusion</option>
+          <option value="prompthero/openjourney">Prompt Hero Open Journey</option>
+          <option value="runwayml/stable-diffusion-v1-5">RunwayML Stable Diffusion V1.5</option>
+        </select>
+      </div>
+
+      <button type="submit">Dream</button>
+    </form>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
